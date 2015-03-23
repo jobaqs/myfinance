@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails myfinance: development" uuid="9ac616be-69f9-41b5-96d6-99305cad3859">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails myfinance: test" uuid="faff530d-2203-4fa6-a58d-8ad0eaeaff26">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails myfinance: production" uuid="5e7e7944-d4bc-4b53-8fa5-53f17c968ace">
+      <first-sync>true</first-sync>
+      <user-name>myfinance</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe7dff3dfecdfe3dfe4dfebdfe4dfe9dfefdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
