@@ -1,0 +1,53 @@
+
+
+<%= form_for(@journal) do |f| %>
+  <% if @journal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@journal.errors.count, "error") %> prohibited this journal from being saved:</h2>
+
+      <ul>
+      <% @journal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="row" style="max-width: 100%; margin-left: auto; margin-right: auto;">
+
+        <div class="row">
+          <div class="input-field col s6">
+              <%= f.label :date_of_journal %>
+              <%= f.text_field :date_of_journal %>
+          </div>
+          <div class="input-field col s6">
+              <%= f.label :payee %>
+              <%= f.text_field :payee %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <%= f.label :description %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <%= f.text_area :description %>
+          </div>
+        </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <%= f.label :account_id %>
+          <%= f.number_field :account_id %>
+        </div>
+        <div class="input-field col s6">
+          <%= f.label :amount %>
+          <%= f.text_field :amount %>
+        </div>
+      </div>
+    </div>
+
+  <div class="actions right-align">
+    <%= f.submit 'Save', class:'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+
+
+<div class="card-panel z-depth-2" style="max-width: 30%; margin-left: auto; margin-right: auto;">
+  <div class="valign-wrapper">
+    <h5 class="center-align">Login</h5></div>
+  <div  style="max-width: 90%; margin-left: 5%">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), class: 'col s2') do |f| %>
+  <div class="input-field">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, id: "email", class: 'validate' %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+
+  <div class="actions right-align">
+    <%= f.submit "Submit", class: 'btn waves-light' %>
+  </div>
+<% end %>
+<div class="right-align">
+<%= render "devise/shared/links" %>
+</div>
+</div>
+</div>

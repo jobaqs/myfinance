@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_journal: 2015-03-23
+  payee: MyString
+  description: MyText
+  account_id: 1
+  amount: 9.99
+  user_id: 1
+  is_posted: false
+
+two:
+  date_of_journal: 2015-03-23
+  payee: MyString
+  description: MyText
+  account_id: 1
+  amount: 9.99
+  user_id: 1
+  is_posted: false

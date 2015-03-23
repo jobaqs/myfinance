@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date of journal:</strong>
+  <%= @journal.date_of_journal %>
+</p>
+
+<p>
+  <strong>Payee:</strong>
+  <%= @journal.payee %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @journal.description %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @journal.account_id %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @journal.amount %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @journal.user_id %>
+</p>
+
+<p>
+  <strong>Is posted:</strong>
+  <%= @journal.is_posted %>
+</p>
+
+<%= link_to 'Edit', edit_journal_path(@journal) %> |
+<%= link_to 'Back', journals_path %>
