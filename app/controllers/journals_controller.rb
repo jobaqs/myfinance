@@ -44,6 +44,6 @@ class JournalsController < ApplicationController
     end
 
     def journal_params
-      params.require(:journal).permit(:date_of_journal, :payee, :description, :account_id, :amount, :user_id, :is_posted)
+      params.require(:journal).permit(:date_of_journal, :payee, :description, :account_id, :amount, :user_id, :is_posted, :expense_type_id)
     end
 end

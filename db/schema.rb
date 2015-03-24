@@ -11,10 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150323020259) do
+ActiveRecord::Schema.define(version: 20150323075902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: true do |t|
+    t.integer  "account_number"
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "expense_types", force: true do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "journals", force: true do |t|
     t.date     "date_of_journal"
@@ -26,6 +41,7 @@ ActiveRecord::Schema.define(version: 20150323020259) do
     t.boolean  "is_posted",                                default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "expense_type_id"
   end
 
   create_table "users", force: true do |t|

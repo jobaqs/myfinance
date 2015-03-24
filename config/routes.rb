@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :expense_types
+
+  resources :accounts
+
   root to: "journals#index"
   resources :journals
 

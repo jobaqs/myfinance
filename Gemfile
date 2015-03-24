@@ -38,4 +38,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'devise'
+gem 'puma'
+
+source 'http://rails-assets.org' do
+  gem 'rails-assets-materialize'
+end
 

@@ -12,15 +12,16 @@
 </head>
 <body class="content">
 <nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Logo</a>
+  <div class="nav-wrapper blue darken-4">
+    <a class="brand-logo" style="padding-left: 10px;"><%= image_tag('swlogo-white.png', size: "250x60")%></a>
+
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="<%= root_path %>">Journals</a></li>
-      <li><a href="components.html">Components</a></li>
+      <li><a href="<%= accounts_url %>">Accounts</a></li>
       <li><a href="javascript.html">JavaScript</a></li>
-        <li><%= link_to "Hello, " + current_user.email + " [Click here to logout] ", destroy_user_session_path, :method => :delete%></li>
-
+      <li><%= link_to "LOGOUT", destroy_user_session_path, :method => :delete%></li>
     </ul>
+    <span class="right" style="padding-right: 20px;">Hello, <%= current_user.email %>  </span>
   </div>
 </nav>
 
