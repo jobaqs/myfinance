@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'devise'
 gem 'puma'
+gem 'rails_12factor', group: :production
 
 source 'http://rails-assets.org' do
   gem 'rails-assets-materialize'
